@@ -4,11 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>중고나라</title>
-<link rel="shortcut icon" href="resources/img/favicon.ico" type="image/x-icon">
-<link rel="icon" href="resources/img/favicon.ico" type="image/x-icon">
+<title>Insert title here</title>
 </head>
 <body>
-	인덱스
+
 </body>
 </html>
