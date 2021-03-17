@@ -5,6 +5,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>중고나라</title>
+<link rel="shortcut icon" href="resources/img/favicon.ico" type="image/x-icon">
+<link rel="icon" href="resources/img/favicon.ico" type="image/x-icon">
 </head>
 <body>
 	인덱스
