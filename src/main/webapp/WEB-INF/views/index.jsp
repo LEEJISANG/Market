@@ -8,7 +8,12 @@
 <link rel="shortcut icon" href="resources/img/favicon.ico" type="image/x-icon">
 <link rel="icon" href="resources/img/favicon.ico" type="image/x-icon">
 </head>
+<script>
+</script>
 <body>
+<form>
 	인덱스
+	<a href="login.do">로그인</a>
+</form>
 </body>
 </html>
