@@ -15,7 +15,15 @@
 <link rel="icon" href="resources/icon/favicon.ico" type="image/x-icon">
 
 </head>
+<script>
+</script>
 <body>
+<<<<<<< HEAD
+<form>
+	인덱스
+	<a href="login.do">로그인</a>
+</form>
+=======
 	<header>
 		<div class="top-bar-1">
 			<div class="top-bar-1-1">
@@ -60,5 +68,6 @@
 			</div>
 		</div>
 	</header>
+>>>>>>> refs/heads/master
 </body>
 </html>
