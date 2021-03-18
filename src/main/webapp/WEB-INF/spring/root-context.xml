@@ -8,9 +8,9 @@
 	<!-- DB설정 -->
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://localhost:3306/ching21?serverTimezone=UTC" />
+		<property name="url" value="jdbc:mysql://localhost:3306/atum?serverTimezone=UTC" />
 		<property name="username" value="market" />
-		<property name="password" value="markey0317!" />
+		<property name="password" value="1111" />
 	</bean>
 	
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
