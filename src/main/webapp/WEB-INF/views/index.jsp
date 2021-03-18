@@ -5,16 +5,23 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>중고나라</title>
+
+<!-- Style -->
+<link rel="stylesheet" href="resources/css/marketreset.css">
+<link rel="stylesheet" href="resources/css/header.css">
+
+<!-- favicon -->
+<link rel="shortcut icon" href="resources/icon/favicon.ico" type="image/x-icon">
+<link rel="icon" href="resources/icon/favicon.ico" type="image/x-icon">
+
 </head>
 <script>
 </script>
 <body>
-<<<<<<< HEAD
 <form>
 	인덱스
-	<a href="login.do">로그인</a>
+	<a href="loginPage.do">로그인</a>
 </form>
-=======
 	<header>
 		<div class="top-bar-1">
 			<div class="top-bar-1-1">
@@ -59,6 +66,5 @@
 			</div>
 		</div>
 	</header>
->>>>>>> refs/heads/master
 </body>
 </html>
