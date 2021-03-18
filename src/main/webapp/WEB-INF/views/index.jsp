@@ -5,6 +5,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>중고나라</title>
+
+<!-- Style -->
+<link rel="stylesheet" href="resources/css/marketreset.css">
+<link rel="stylesheet" href="resources/css/header.css">
+
+<!-- favicon -->
+<link rel="shortcut icon" href="resources/icon/favicon.ico" type="image/x-icon">
+<link rel="icon" href="resources/icon/favicon.ico" type="image/x-icon">
+
 </head>
 <body>
 	<header>
