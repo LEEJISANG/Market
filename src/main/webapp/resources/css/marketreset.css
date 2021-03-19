@@ -61,6 +61,21 @@ body {
     background-color: rgb(249, 249, 249);
     font-size: 14px;
 }
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0px;
+}
+button, input {
+    overflow: visible;
+}
+button, select {
+    text-transform: none;
+}
+button, [type="button"], [type="reset"], [type="submit"] {
+    appearance: button;
+}
 body, input, textarea, select, button {
 	-webkit-font-smoothing: antialiased;
 	direction: ltr;
@@ -70,12 +85,31 @@ body, input, textarea, select, button {
 	outline: 0px;
 	border: 0px;
 }
-
+button, input {
+    padding: 0px;
+    border: 0px;
+}
+button, input[type="text"], input[type="tel"], input[type="number"] {
+    appearance: none;
+}
+button {
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+a {
+    background-color: transparent;
+}
 a {
 	color: rgb(33, 33, 33);
     text-decoration: none;
     cursor: pointer;
-    background-color: transparent;
+}
+img {
+	border-style: none;
+}
+img {
+	vertical-align: bottom;
 }
 
 
