@@ -23,15 +23,15 @@
 			<div class="top-bar-1">
 				<div class="top-bar-1-1">
 					<div class="top-bar-1-group">
-						<a class="top-bar-a" href="loginPage.do">로그인</a>
-						<a class="top-bar-a" href="#">마이페이지</a>
+						<a class="top-bar-a" href="loginPage">로그인</a>
+						<a class="top-bar-a" href="myPage">마이페이지</a>
 					</div>
 				</div>
 			</div>
 			<div class="top-bar-2">
 				<div class="top-bar-2-1">
 					<div class="top-bar-2-2">
-						<a class="logo-a" href="#">
+						<a class="logo-a" href="index">
 							<img src="resources/img/logo_black.png" width="136" height="40" alt="중고나라 로고" />
 						</a>
 						<div class="search-1">
