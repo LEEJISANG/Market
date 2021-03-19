@@ -22,7 +22,6 @@ public class MemberController {
 	@Autowired
 	private SqlSession sqlSession;
 	
-	@Autowired
 	private MemberLoginCommand memberLoginCommand;
 	
 	@Autowired
@@ -35,11 +34,12 @@ public class MemberController {
 		return "member/loginPage";
 	}
 	
-	@RequestMapping(value="login.do", 
+	@RequestMapping(value="login", 
 					method=RequestMethod.POST, 
 					produces="application/json; charset=utf-8")
 	@ResponseBody
-	public Map<String, Object> login(@RequestBody MemberDto memberDto, HttpServletRequest request, Model model){
+	public Map<String, Object> login(@RequestBody MemberDto memberDto, 
+							   HttpServletRequest request, Model model){
 		if(memberDto != null) {
 			model.addAttribute("memberDto", memberDto);
 		}
