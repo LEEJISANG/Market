@@ -25,7 +25,6 @@ public class MemberLoginCommand implements MemberCommand {
 		
 		HttpServletRequest request = (HttpServletRequest)map.get("request");
 		HttpSession session = request.getSession();
-		System.out.println("여기까지 출력");
 		
 		MemberDao memberDao = sqlSession.getMapper(MemberDao.class);
 		if(memberDao.login(m_id, m_pw) != null) {
