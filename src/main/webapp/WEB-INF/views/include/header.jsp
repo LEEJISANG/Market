@@ -63,7 +63,9 @@
 				<div class="header-bottom-bottom-box">
 					<div class="menu-box">
 						<img src="resources/img/menu.png" width="20" height="16" alt="메뉴 버튼 아이콘" />
-						전체 카테고리
+					</div>
+					<div class="menu-box-name">
+						<strong>전체 카테고리</strong>
 					</div>
 				</div>
 			</div>

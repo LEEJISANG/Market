@@ -45,6 +45,16 @@
     border-right: 1px solid rgb(204, 204, 204);
     box-sizing: border-box;
 }
+.footer-a:last-child::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 0px;
+    height: 0px;
+    border-right: 0px solid rgb(204, 204, 204);
+    box-sizing: border-box;
+}
 .footer-bottom {
 	width: 100%;
     display: grid;

@@ -111,5 +111,7 @@ img {
 img {
 	vertical-align: bottom;
 }
-
+b, strong {
+    font-weight: bolder;
+}
 

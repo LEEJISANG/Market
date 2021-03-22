@@ -132,6 +132,16 @@
 	margin-right: 20px;
     position: relative;
 }
+.menu-box-name {
+	display: flex;
+    -webkit-box-align: baseline;
+    align-items: baseline;
+    margin: 6px;
+    line-height: 1.5;
+    height: 21px;
+    box-sizing: border-box;
+    border-bottom: 1px solid transparent;
+}
 .side-box1 {
 	position: absolute;
     top: 102px;
@@ -200,24 +210,6 @@
     margin: 0px auto;
     height: 300px;
     background: white;
-}
-.s1r-1 {
-	
-}
-.s1r-1 {
-	
-}
-.s1r-1 {
-	
-}
-.s1r-1 {
-	
-}
-.s1r-1 {
-	
-}
-.s1r-1 {
-	
 }
 
 
