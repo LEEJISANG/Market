@@ -1,6 +1,41 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+<jsp:include page="../include/header.jsp" />
+<style>
+	table {
+	margin-top: 200px;
+	border: 1px solid black;
+	width: 100%;
+	z-index:auto;
+	}
+	td > a{
+	color: red;
+	}
+	table >tbody > tr > td {
+		border: 2px solid black;
+		padding:10px;
+		text-align: center;
+	}
+	table >thead > tr > td {
+		border: 2px solid black;
+		padding:10px;
+		text-align: center;
+	}
+	table >tfoot > tr> td>input[type=button] {
+		border-radius: 5px;
+	background-color: black;
+	color: white;
+	width: 8em;
+	padding: 6px;
+	}
+	table >tfoot >tr>td>input[type=button]:hover{
+	background-color: white;
+	color: black;
+	transition-property: background-color, color;
+	transition-duration: 0.6s;
+	}
+</style>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -9,12 +44,12 @@
 <script type="text/javascript">
  	function fn_update(f){
  		alert('수정 완료');
- 		f.action= "boardUpdate";
+ 		f.action= "BoardUpdate";
  		f.submit();
  	}
  	function fn_delete(f){
- 		allert('삭제 완료');
- 		f.action="boardDelete";
+ 		alert('삭제 완료');
+ 		f.action="BoardDelete";
  		f.submit();
  	}
 </script>
@@ -45,3 +80,4 @@
 	</form>
 </body>
 </html>
+<jsp:include page="../include/footer.jsp" />

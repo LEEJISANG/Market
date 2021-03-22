@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
-<jsp:include page="../template/header.jsp" />
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <style>
 	#login-box{
@@ -58,4 +57,3 @@
 			<button id="login_btn">로그인</button>
 		</div>
 	</div>
-<jsp:include page="../template/footer.jsp"/>

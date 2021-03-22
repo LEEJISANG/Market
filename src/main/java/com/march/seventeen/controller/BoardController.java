@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.march.seventeen.command.board.BoardCommand;
+import com.march.seventeen.command.board.BoardDeleteCommand;
 import com.march.seventeen.command.board.BoardInsertCommand;
 import com.march.seventeen.command.board.BoardListCommand;
 import com.march.seventeen.command.board.BoardUpdateCommand;
@@ -57,6 +58,13 @@ public class BoardController {
 	public String update(HttpServletRequest request, Model model) {
 		model.addAttribute("request", request);
 		boardCommand = new BoardUpdateCommand();
+		boardCommand.execute(sqlSession, model);
+		return "redirect:boardList";
+	}
+	@RequestMapping(value="BoardDelete", method=RequestMethod.POST)
+	public String delete(HttpServletRequest request, Model model) {
+		model.addAttribute("request", request);
+		boardCommand = new BoardDeleteCommand();
 		boardCommand.execute(sqlSession, model);
 		return "redirect:boardList";
 	}

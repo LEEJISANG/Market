@@ -27,26 +27,17 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		FROM BOARD
 		WHERE BD_NO = #{param1}
 	</select>
-
-	
-	<!--
-	<select id="BoardView"
-		resultType="com.march.seventeen.dto.BoardDto">
-		SELECT *
-		FROM BOARD
-		WHERE BD_NO = #{param1}
-	</select>
 	<update id="BoardUpdate"
 		parameterType="com.march.seventeen.dto.BoardDto">
 		UPDATE BOARD
-		SET BTITLE = #{param2},
-		BCONTENT = #{param3}
+		SET BD_TITLE = #{param2},
+		BD_CONTENT = #{param3}
 		WHERE BD_NO = #{param1}
 	</update>
 	<delete id="BoardDelete" parameterType="int">
-		DELETE
+		DELETE 
 		FROM BOARD
 		WHERE BD_NO = #{param1}
-	</delete> -->
+	</delete>
 
 </mapper>
