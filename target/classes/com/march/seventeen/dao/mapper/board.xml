@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.march.seventeen.dao.BoardDao">
+
+	<select id="selectBoardList"
+		resultType="com.march.seventeen.dto.BoardDto">
+		SELECT BD_NO, BD_M_NO, BD_TITLE, BD_REGDATE, BD_HIT 
+		FROM BOARD
+		ORDER BY BD_NO DESC
+	</select>
+
+	<select id="selectBoardCount" resultType="int">
+		SELECT COUNT(*)
+		FROM BOARD
+	</select>
+	<insert id="BoardInsert">
+		INSERT INTO
+		BOARD ( BD_M_NO, BD_TITLE, BD_CONTENT, BD_REGDATE, BD_HIT)
+		VALUES (#{param1}, #{param2}, #{param3}, NOW(), 0)
+	</insert>
+	<select id ="BoardView"
+		resultType="com.march.seventeen.dto.BoardDto">
+		SELECT *
+		FROM BOARD
+		WHERE BD_NO = #{param1}
+	</select>
+
+	
+	<!--
+	<select id="BoardView"
+		resultType="com.march.seventeen.dto.BoardDto">
+		SELECT *
+		FROM BOARD
+		WHERE BD_NO = #{param1}
+	</select>
+	<update id="BoardUpdate"
+		parameterType="com.march.seventeen.dto.BoardDto">
+		UPDATE BOARD
+		SET BTITLE = #{param2},
+		BCONTENT = #{param3}
+		WHERE BD_NO = #{param1}
+	</update>
+	<delete id="BoardDelete" parameterType="int">
+		DELETE
+		FROM BOARD
+		WHERE BD_NO = #{param1}
+	</delete> -->
+
+</mapper>
