@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+.footer {
+	display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+}
+.footer-top {
+	width: 100%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border-top: 1px solid rgb(238, 238, 238);
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+.footer-top-box {
+	height: 64px;
+    width: 1024px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.footer-top-box > a {
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    text-align: center;
+}
+.footer-a {
+	display: block;
+    font-size: 13px;
+    color: rgb(77, 77, 77);
+    position: relative;
+}
+.footer-a::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 1px;
+    height: 14px;
+    border-right: 1px solid rgb(204, 204, 204);
+    box-sizing: border-box;
+}
+.footer-a:last-child::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 0px;
+    height: 0px;
+    border-right: 0px solid rgb(204, 204, 204);
+    box-sizing: border-box;
+}
+.footer-bottom {
+	width: 100%;
+    display: grid;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: 32px 0px 24px;
+}
+.footer-bottom-box {
+    width: 1024px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.footer-bottom-top-box {
+	display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 36px;
+}
+.company-name {
+	margin-bottom: 4px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.company-content {
+	line-height: 1.57;
+    letter-spacing: -0.8px;
+}
+.sns {
+	display: flex;
+    align-items: flex-end;
+}
+.sns-a {
+	margin-right: 8px;
+}
+.sns-a:last-child {
+	margin-right: 0px;
+}
+.footer-bottom-bottom-box {
+	width: 1024px;
+    font-size: 13px;
+    color: rgb(153, 153, 153);
+}
+.developer {
+    line-height: 1.57;
+    margin-bottom: 24px;
+}
+.copyright {
+	display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.copyright-box {
+	display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+
