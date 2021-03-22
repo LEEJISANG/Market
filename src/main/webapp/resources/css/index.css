@@ -5,16 +5,9 @@
 
 /* slide */
 
-.index-top-box {
-	position: relative;
-    max-width: 64.375rem;
-    margin: 0px auto;
-    height: 300px;
-    background: white;
-}
+
 
 /* slide */
-
 
 .index-bottom {
 	width: 1024px;
@@ -37,6 +30,9 @@
 	width: 196px;
     margin-right: 11px;
     margin-bottom: 11px;
+}
+.index-product:nth-child(5n) {
+    margin-right: 0px;
 }
 .index-product-a {
     border: 1px solid rgb(238, 238, 238);
