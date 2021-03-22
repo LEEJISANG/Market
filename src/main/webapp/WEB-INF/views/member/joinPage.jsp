@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
-<jsp:include page="../template/header.jsp" />
+<jsp:include page="../include/header.jsp" />
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <link rel="stylesheet" href="resources/css/member.css"/>
 <style>
@@ -209,4 +209,4 @@
  </div> <!-- member-main-box -->
  </form>
 
-<jsp:include page="../template/footer.jsp"/>
+<jsp:include page="../include/footer.jsp"/>
