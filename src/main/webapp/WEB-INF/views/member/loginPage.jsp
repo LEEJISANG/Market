@@ -3,6 +3,7 @@
 
 <jsp:include page="../template/header.jsp" />
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<link rel="stylesheet" href="resources/css/member.css"/>
 <style>
 	#login-box{
 		display: flex;
@@ -11,7 +12,19 @@
 <script>
 	$(document).ready(function(){
 		fn_login();
+		fn_join();
+		fn_find();
 	});
+	function fn_join(){
+		$('#join_btn').on('click', function(){
+			location.href="joinPage";
+		});
+	}
+	function fn_find(){
+		$('#find_btn').on('click', function(){
+			location.href="findPage";
+		});
+	}
 	function fn_login(){
 		$('#login_btn').on('click', function(){
 			login();
@@ -40,7 +53,8 @@
 					alert('성공');
 					location.href="index";
 				}else{
-					alert('실패');
+					alert('아이디/비밀번호가 일치하지 않습니다.');
+					history.back();
 				}
 			},
 			error: function(){
@@ -49,13 +63,21 @@
 		});
 	}
 </script>
-	<div id="login-box">
-		<div id="login-info-box">
-			<input type="text" name="m_id" id="m_id" placeholder="아이디"/><br/>
-			<input type="password" name="m_pw" id="m_pw" placeholder="비밀번호"/>
+	<div class="member-mainbox login">
+		<div id="login-box">
+			<div id="login-info-box">
+				<input type="text" name="m_id" id="m_id" placeholder="아이디"/><br/>
+				<input type="password" name="m_pw" id="m_pw" placeholder="비밀번호"/>
+			</div>
+			<div id="login-btn-box">
+				<button id="login_btn">로그인</button>
+			</div>
 		</div>
-		<div id="login-btn-box">
-			<button id="login_btn">로그인</button>
+		<div id="singin-box">
+			<div>
+				<button id="find_btn">아이디/비밀번호 찾기</button>
+				<button id="join_btn">회원가입</button>
+			</div>
 		</div>
 	</div>
 <jsp:include page="../template/footer.jsp"/>
