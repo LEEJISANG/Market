@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
-.full-size {
+.full-page {
 	min-width: 1236px;
 }
 
-.top-bar-1 {
+.header-top {
 	display: flex;
     -webkit-box-pack: center;
     justify-content: center;
@@ -12,17 +12,17 @@
     height: 40px;
     background: rgb(255, 255, 255);
 }
-.top-bar-1-1 {
+.header-top-box {
 	width: 1024px;
     display: flex;
     -webkit-box-pack: justify;
     justify-content: flex-end;
 }
-.top-bar-1-group {
+.sign-btn-box {
 	display: flex;
     flex-shrink: 0;
 }
-.top-bar-a {
+.sign-a {
 	display: flex;
 	-webkit-box-align: center;
 	align-items: center;
@@ -32,7 +32,8 @@
 	position: relative;
 	line-height: 1.4;
 }
-.top-bar-2 {
+
+.header-bottom {
 	position: sticky;
     display: flex;
     width: 100%;
@@ -45,39 +46,39 @@
     top: 0px;
     left: 0px;
 }
-.top-bar-2-1 {
+.header-bottom-box {
 	display: flex;
     flex-direction: column;
     width: 1024px;
 }
-.top-bar-2-2 {
+.header-bottom-top-box {
 	display: flex;
     -webkit-box-align: center;
     align-items: center;
     width: 1024px;
     height: 40px;
 }
-.top-bar-2-3 {
+.header-bottom-bottom-box {
 	display: flex;
     -webkit-box-align: center;
     align-items: center;
     height: 70px;
 }
-.logo-a {
+.logo-box {
 	margin-right: 100px;
     width: 136px;
     display: flex;
     -webkit-box-align: center;
     align-items: center;
 }
-.search-1 {
+.search-box1 {
 	border: 2px solid rgb(0, 0, 0);
     width: 460px;
     height: 40px;
     box-sizing: border-box;
     position: relative;
 }
-.search-2 {
+.search-box2 {
 	width: 100%;
     height: 100%;
     display: flex;
@@ -90,7 +91,7 @@
     -webkit-box-flex: 1;
     flex-grow: 1;
 }
-.top-bar-2-group {
+.btn-box {
 	display: flex;
     flex-direction: row-reverse;
     -webkit-box-align: center;
@@ -98,27 +99,17 @@
     -webkit-box-flex: 1;
     flex-grow: 1;
 }
-.group-a {
+.btn-a1 {
 	margin-left: 30px;
     display: flex;
     -webkit-box-align: center;
     align-items: center;
     position: relative;
 }
-.group-a>img {
+.btn-a1>img {
 	margin-right: 5px;
 }
-.group-a-last {
-	margin-left: 30px;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    position: relative;
-}
-.group-a-last>img {
-	margin-right: 5px;
-}
-.group-a::after {
+.btn-a1::after {
 	content: "";
     width: 1px;
     height: 10px;
@@ -127,47 +118,67 @@
     top: 8px;
     right: -15px;
 }
-.left-menu-bar {
+.btn-a2 {
+	margin-left: 30px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+}
+.btn-a2>img {
+	margin-right: 5px;
+}
+.menu-box {
 	margin-right: 20px;
     position: relative;
 }
-.side-bar-1 {
+.menu-box-name {
+	display: flex;
+    -webkit-box-align: baseline;
+    align-items: baseline;
+    margin: 6px;
+    line-height: 1.5;
+    height: 21px;
+    box-sizing: border-box;
+    border-bottom: 1px solid transparent;
+}
+.side-box1 {
 	position: absolute;
     top: 102px;
     right: calc(50% - 617px);
     z-index: 20;
 }
-.side-bar-2 {
+.side-box2 {
 	width: 90px;
 }
-.side-bar-box {
+.side-box3 {
 	padding: 10px;
     width: 100%;
     border: 1px solid rgb(204, 204, 204);
     background: rgb(255, 255, 255);
     margin-bottom: 6px;
 }
-.side-bar-box:first-child {
+.side-box3:first-child {
     border-color: rgb(102, 102, 102);
 }
-.side-bar-box:last-child {
+.side-box3:last-child {
     margin-bottom: 0px;
     padding: 0px;
     border-color: rgb(229, 229, 229);;
 }
-.wish-list-1 {
+.wishlist-box1 {
 	font-size: 12px;
     font-weight: 600;
     color: rgb(102, 102, 102);
     text-align: center;
     margin-bottom: 8px;
 }
-.wish-list-2 {
+.wishlist-box2 {
 	display: flex;
     -webkit-box-pack: center;
     justify-content: center;
 }
-.wish-list-a {
+.wishlist-a {
 	display: flex;
     -webkit-box-align: center;
     align-items: center;
@@ -175,7 +186,7 @@
     color: rgb(204, 204, 204);
     font-weight: 600;
 }
-.wish-list-a>img {
+.wishlist-a>img {
     margin-right: 5px;
 }
 .top-btn {
@@ -190,29 +201,15 @@
     font-size: 13px;
     color: rgb(102, 102, 102);
 }
-.s1r-1 {
-	
+.article-top {
+	background: white;
 }
-.s1r-1 {
-	
-}
-.s1r-1 {
-	
-}
-.s1r-1 {
-	
-}
-.s1r-1 {
-	
-}
-.s1r-1 {
-	
-}
-.s1r-1 {
-	
-}
-.s1r-1 {
-	
+.article-top-box {
+	position: relative;
+    max-width: 64.375rem;
+    margin: 0px auto;
+    height: 300px;
+    background: white;
 }
 
 
