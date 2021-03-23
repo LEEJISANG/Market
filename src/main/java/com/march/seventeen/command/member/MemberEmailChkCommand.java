@@ -14,20 +14,27 @@ public class MemberEmailChkCommand implements MemberCommand {
 	public Map<String, Object> execute(SqlSession sqlSession, Model model) {
 		
 		Map<String, Object> map = model.asMap();
-		String m_email = (String)map.get("m_email");
+		
+		String m_email1 = (String)map.get("m_email1");
+		String m_email2 = (String)map.get("m_email2");
+		String m_email = m_email1 + '@' + m_email2;
 		System.out.println(m_email);
+	
 		Map<String, Object> resultMap = new HashMap<String, Object>();
 		
 		MemberDao memberDao = sqlSession.getMapper(MemberDao.class);
-		int emailChkResult = memberDao.emailChk(m_email);
+		String emailChkResult = memberDao.emailChk(m_email);
 		System.out.println(emailChkResult);
-		if (emailChkResult == 1) {
-			resultMap.put("emailChkResult", 1);
-		}else {
+		if (emailChkResult == "1") {
 			resultMap.put("emailChkResult", 2);
+		}else {
+			resultMap.put("emailChkResult", 1);
+		}
+		if(emailChkResult == null) {
+			resultMap.put("emailChkResult", 3);
 		}
 		
-		return null;
+		return resultMap;
 	}
 
 }
