@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 public class BoardDto {
 	
 	private int bd_no;
-	private int bd_m_no;
+	private String bd_m_no;
 	private String bd_title;
 	private String bd_content;
 	private Date bd_regDate;
