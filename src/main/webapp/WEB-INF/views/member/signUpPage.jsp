@@ -11,19 +11,20 @@
 </style>
 <script>
 	$(document).ready(function(){
-		fn_switch();
-		fn_normalAct();
+		fn_switch(); //이메일 직접입력
+		fn_activator(); //정규화 확인
 	});
-	function fn_normalAct(){
-		$('#m_pw').on('focus',function(){
-			fn_normalization();
-		})
+	function fn_activator(){
 		$('#m_email2').on('blur',function(){
 			fn_normalization();
 		})
-		$('#m_pw').on('blur',function(){
+		$('#m_pw').on('keyup', function(){
 			fn_normalization();
 		})
+		$('#m_pw2').on('keyup', function(){
+			fn_pwChk();
+		})
+	
 	}
 	function fn_normalization(){
 			var m_email1 = $('#m_email1').val();
@@ -39,38 +40,42 @@
 			var regEmail = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
 			if(regEmail.test(m_email)){
 				$('#emailChkResult').text('사용할 수 있는 이메일입니다.').css('color', 'green');
+				$('#eNor').val("2");
 			}else{
 				$('#emailChkResult').text('유효한 이메일 형식이 아닙니다.').css('color', 'red');
 			}
+
 			var m_pw = $('#m_pw').val();
-			var regPw = /^(?=.*\d)(?=.*[a-zA-Z])[0-9a-zA-Z]{8,12}$/;
+			//숫자, 소문자 조합 8 - 12자리
+			var regPw = /^(?=.*[a-z])(?=.*[0-9])[a-z0-9`~!@#$%^&*()-_=+]{8,12}$/;
 			if(regPw.test(m_pw)){
+				$('#pwNorResult').text('사용가능한 비밀번호 입니다.').css('color', 'green');
+				$('#pwNor').val("2");
 			}else{
-				$('#pwNorResult').text('유효한 비밀번호 형식이 아닙니다.').css('color', red);
+				$('#pwNorResult').text('유효한 비밀번호 형식이 아닙니다.').css('color', 'red');
 			}
+			
+			
 	}
 	function fn_emailChk(){
 		var m_email1 = $('#m_email1').val();
 		var email_select = $('#email_select').val();
 		var email_input = $('#email_input').val();
 		var m_email2 = '';
-		if(email_select != 'manual'){
-			m_email2 = email_select;
-		}else{
-			m_email2 = email_input;
-		}
-		var m_email = m_email1 + '@' + m_email2;
+		if(email_select != 'manual'){ 	
+			m_email2 = email_select; 	
+		}else{	m_email2 = email_input;		}
 			$.ajax({
 				url: 'emailChk',
 				type: 'post',
-				data: m_email,
+				data: 'm_email1=' + m_email1 + '&m_email2=' + m_email2,
 				dataType: 'text',
 				success: function(responseObj){
 					if(responseObj == 1){
-						alert('가입이 가능한 이메일 입니다.');
-						$('#eChk').text('2');
-					}else{
 						alert('이미 가입된 이메일 입니다.');
+					}else{
+						alert('가입이 가능한 이메일 입니다.');
+						$('#eChk').val("2");
 					}
 				},
 				error: function(){
@@ -79,6 +84,17 @@
 			});
 		
 	}
+	function fn_pwChk(){
+		var m_pw = $('#m_pw').val();
+		var m_pw2 = $('#m_pw2').val();
+		if(m_pw == m_pw2){
+			$('#pwChkResult').text('비밀번호가 일치합니다.').css('color', 'green');
+			$('#pwChk').val("2");
+		}else{
+			$('#pwChkResult').text('비밀번호가 일치하지 않습니다.').css('color', 'red');
+		}
+	}
+	
 	function fn_switch(){
 		$('#email_select').change(function(){
 			var m_email2 = $('#email_select').val();
@@ -90,7 +106,14 @@
 	}
 	function fn_join(f){
 		var queryString = $("form[name=join-form]").serialize() ;
+		var eChk = $('#eChk').val();
+		var eNor = $('#eChk').val();
+		var pwNor = $('#eChk').val();
+		var pwChk = $('#eChk').val();
+		var pwChk2 = $('#eChk').val();
 		var eChk = $('#eChk').text();
+		if(){ //eNor pwNor pwChk pwChk2
+			
 		$.ajax({
 			url: 'join',
 			type: 'post',
@@ -105,6 +128,7 @@
 				alert('error');
 			}
 		});
+		}
 		
 	}
 	
@@ -133,14 +157,13 @@
 						<input type="text" placeholder="직접입력" name="m_email2" id="email_input"/>
 					</span>
 					<input type="button" id="id_chk" onclick="fn_emailChk()" value="중복확인"/><br/>
-					<span id="eChk" style="display: none;">1</span>
 					<span id="emailChkResult"></span>
 				</div>
 				<div class="desc">
 					비밀번호
 				</div>
 				<div id="pw-desc">
-					영소문자/숫자 /특수문자 중 2가지 이상 조합, 8자~12자
+					영소문자/숫자 조합, 8자~12자리
 				</div>
 				<div class="data">
 					<input class="req" type="password" name="m_pw" id="m_pw" /><br/>
@@ -200,7 +223,12 @@
 					-<input class="req" type="text" name="m_phone2" id="m_phone2" size="4"/>
 					-<input class="req" type="text" name="m_phone3" id="m_phone3" size="4"/>
 				</div>
-			<div class="mem-btn-box">
+			<div class="mem-btn-box"> 
+				<input type="hidden" id="eChk" value="1"/>
+				<input type="hidden" id="eNor" value="1"/>
+				<input type="hidden" id="pwNor" value="1"/>
+				<input type="hidden" id="pwChk" value="1"/>
+				<input type="hidden" id="pwChk2" value="1"/>
 				<input type="button" id="join" onclick="fn_join(this.form)" value="가입하기"/>
 			</div>
 
