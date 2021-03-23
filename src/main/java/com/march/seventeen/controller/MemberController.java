@@ -1,4 +1,4 @@
-package com.march.seventeen.controller;
+/*package com.march.seventeen.controller;
 
 import java.util.Map;
 
@@ -11,6 +11,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.march.seventeen.command.member.MemberEmailChkCommand;
@@ -23,7 +24,6 @@ public class MemberController {
 	@Autowired
 	private SqlSession sqlSession;
 	
-	private MemberLoginCommand memberLoginCommand;
 	private MemberEmailChkCommand memberEmailChkCommand;
 	
 	@Autowired
@@ -33,17 +33,17 @@ public class MemberController {
 		this.memberEmailChkCommand = memberEmailChkCommand;
 	}
 	
-	@RequestMapping(value="loginPage.do", method=RequestMethod.GET)
+	@RequestMapping(value="loginPage", method=RequestMethod.GET)
 	public String loginPage(HttpServletRequest request, Model model){
 		return "member/loginPage";
 	}
 	@RequestMapping(value="joinPage", method=RequestMethod.GET)
 	public String joinPage(HttpServletRequest request, Model model) {
-		return "member/joinPage";
+		return "member/signUpPage";
 	}
 	@RequestMapping(value="findPage", method=RequestMethod.GET)
 	public String findPage(HttpServletRequest request, Model model) {
-		return "member/findPage";
+		return "member/findIDPWPage";
 	}
 	
 	@RequestMapping(value="login", 
@@ -60,14 +60,17 @@ public class MemberController {
 	}
 	
 	@RequestMapping(value="emailChk", method=RequestMethod.POST,
-			produces="text/plain; charset=utf-8")
+			produces="application/json; charset=utf-8")
 	@ResponseBody
-	public Map<String, Object> emailChk(@RequestBody String m_email,
+	public Map<String, Object> emailChk(@RequestParam String m_email1,
+										@RequestParam String m_email2,
 									HttpServletRequest request, Model model){
-		if(m_email != null) {
-			model.addAttribute("m_email", m_email);
+		if(m_email1 != null && m_email2 != null) {
+			model.addAttribute("m_email1", m_email1);
+			model.addAttribute("m_email2", m_email2);
 		}
 		model.addAttribute("request", request);
 		return memberEmailChkCommand.execute(sqlSession, model);
 	}
 }
+*/
