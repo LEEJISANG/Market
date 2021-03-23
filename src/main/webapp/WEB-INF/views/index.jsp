@@ -18,7 +18,7 @@
 						<div>
 							<div tabindex="-1" class="sc-cZLAbK claIfb" style="width: 100%; display: inline-block;">
 								<button type="button">
-									<img src="https://media.bunjang.co.kr/images/nocrop/550629562.jpg" title="주요 사기 패턴_4분기" class="sc-iVOTot jHpLoT">
+									<img src="resources/img/-1.jpg" title="주요 사기 패턴_4분기" class="sc-iVOTot jHpLoT">
 								</button>
 							</div>
 						</div>
@@ -27,7 +27,7 @@
 						<div>
 							<div tabindex="-1" class="sc-cZLAbK claIfb" style="width: 100%; display: inline-block;">
 								<button type="button">
-									<img src="https://media.bunjang.co.kr/images/nocrop/607789480.jpg" 	title="tvN <신박한 정리> 36회 선공개" class="sc-iVOTot jHpLoT">
+									<img src="resources/img/0.jpg" 	title="tvN <신박한 정리> 36회 선공개" class="sc-iVOTot jHpLoT">
 								</button>
 							</div>
 						</div>
@@ -36,7 +36,7 @@
 						<div>
 							<div tabindex="-1" class="sc-cZLAbK claIfb" style="width: 100%; display: inline-block;">
 								<button type="button">
-									<img src="https://media.bunjang.co.kr/images/nocrop/608448048.jpg" title="기획전_FL_번개픽(루이클럽)" class="sc-iVOTot jHpLoT">
+									<img src="resources/img/1.jpg" title="기획전_FL_번개픽(루이클럽)" class="sc-iVOTot jHpLoT">
 								</button>
 							</div>
 						</div>
@@ -45,7 +45,7 @@
 						<div>
 							<div tabindex="-1" class="sc-cZLAbK claIfb" style="width: 100%; display: inline-block;">
 								<button type="button">
-									<img src="https://media.bunjang.co.kr/images/nocrop/607732690.jpg" title="(오늘마감)BGZT드로우_슈프림덩크로우" class="sc-iVOTot jHpLoT">
+									<img src="resources/img/2.jpg" title="(오늘마감)BGZT드로우_슈프림덩크로우" class="sc-iVOTot jHpLoT">
 								</button>
 							</div>
 						</div>
@@ -54,7 +54,7 @@
 						<div>
 							<div tabindex="-1" class="sc-cZLAbK claIfb" style="width: 100%; display: inline-block;">
 								<button type="button">
-									<img src="https://media.bunjang.co.kr/images/nocrop/608086323.jpg" title="기획전_FL_번개픽(후드)" class="sc-iVOTot jHpLoT">
+									<img src="resources/img/3.jpg" title="기획전_FL_번개픽(후드)" class="sc-iVOTot jHpLoT">
 								</button>
 							</div>
 						</div>
@@ -63,7 +63,7 @@
 						<div>
 							<div tabindex="-1" class="sc-cZLAbK claIfb" style="width: 100%; display: inline-block;">
 								<button type="button">
-									<img src="https://media.bunjang.co.kr/images/nocrop/608134623.jpg" title="요트2_DIY" class="sc-iVOTot jHpLoT">
+									<img src="resources/img/4.jpg" title="요트2_DIY" class="sc-iVOTot jHpLoT">
 								</button>
 							</div>
 						</div>
@@ -72,7 +72,7 @@
 						<div>
 							<div tabindex="-1" class="sc-cZLAbK claIfb" style="width: 100%; display: inline-block;">
 								<button type="button">
-									<img src="https://media.bunjang.co.kr/images/nocrop/606288041.jpg" title="기획전_브그즈트랩" class="sc-iVOTot jHpLoT">
+									<img src="resources/img/5.jpg" title="기획전_브그즈트랩" class="sc-iVOTot jHpLoT">
 								</button>
 							</div>
 						</div>
@@ -81,7 +81,7 @@
 						<div>
 							<div tabindex="-1" class="sc-cZLAbK claIfb" style="width: 100%; display: inline-block;">
 								<button type="button">
-									<img src="https://media.bunjang.co.kr/images/nocrop/608489304.jpg" title="기획전_전동킥보드 21.03" class="sc-iVOTot jHpLoT">
+									<img src="resources/img/6.jpg" title="기획전_전동킥보드 21.03" class="sc-iVOTot jHpLoT">
 								</button>
 							</div>
 						</div>
@@ -90,7 +90,7 @@
 						<div>
 							<div tabindex="-1" class="sc-cZLAbK claIfb" style="width: 100%; display: inline-block;">
 								<button type="button">
-									<img src="https://media.bunjang.co.kr/images/nocrop/606502652.jpg" title="3월 혜택 &amp; 이벤트" class="sc-iVOTot jHpLoT">
+									<img src="resources/img/7.jpg" title="3월 혜택 &amp; 이벤트" class="sc-iVOTot jHpLoT">
 								</button>
 							</div>
 						</div>
@@ -99,7 +99,7 @@
 						<div>
 							<div tabindex="-1" class="sc-cZLAbK claIfb" style="width: 100%; display: inline-block;">
 								<button type="button">
-									<img src="https://media.bunjang.co.kr/images/nocrop/609296772.jpg" title="번개페이 재구매 프로모션" class="sc-iVOTot jHpLoT">
+									<img src="resources/img/8.jpg" title="번개페이 재구매 프로모션" class="sc-iVOTot jHpLoT">
 								</button>
 							</div>
 						</div>
@@ -108,7 +108,7 @@
 						<div>
 							<div tabindex="-1" class="sc-cZLAbK claIfb" style="width: 100%; display: inline-block;">
 								<button type="button">
-									<img src="https://media.bunjang.co.kr/images/nocrop/605493577.jpg" title="유심 통합 페이지" class="sc-iVOTot jHpLoT">
+									<img src="resources/img/9.jpg" title="유심 통합 페이지" class="sc-iVOTot jHpLoT">
 								</button>
 							</div>
 						</div>
@@ -117,7 +117,7 @@
 						<div>
 							<div tabindex="-1" class="sc-cZLAbK claIfb" style="width: 100%; display: inline-block;">
 								<button type="button">
-									<img src="https://media.bunjang.co.kr/images/nocrop/550629562.jpg" title="주요 사기 패턴_4분기" class="sc-iVOTot jHpLoT">
+									<img src="resources/img/-1.jpg" title="주요 사기 패턴_4분기" class="sc-iVOTot jHpLoT">
 								</button>
 							</div>
 						</div>
@@ -126,7 +126,7 @@
 						<div>
 							<div tabindex="-1" class="sc-cZLAbK claIfb" style="width: 100%; display: inline-block;">
 								<button type="button">
-									<img src="https://media.bunjang.co.kr/images/nocrop/607789480.jpg" title="tvN <신박한 정리> 36회 선공개" class="sc-iVOTot jHpLoT">
+									<img src="resources/img/0.jpg" title="tvN <신박한 정리> 36회 선공개" class="sc-iVOTot jHpLoT">
 								</button>
 							</div>
 						</div>
