@@ -55,7 +55,7 @@
 							<img src="resources/svg/user-white.svg" width="23" height="24" alt="내상점 이미지">
 							내상점
 						</a>
-						<a class="btn-a1" href="#">
+						<a class="btn-a1" href="boardList">
 							<img src="resources/svg/sale-white.svg" width="23" height="24" alt="판매하기 이미지">
 							판매하기
 						</a>
