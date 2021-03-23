@@ -91,7 +91,7 @@ table>tfoot>tr>td>input[type=button]:hover {
 				</tr>
 				<tr>
 				<td colspan="2"><br/><br/>
-		<img alt="${boardDto.filename}" src="resources/storage/${filename}"></td>
+		<img alt="${boardDto.filename}" src="resources/storage/${filename}" width="300"></td>
 				</tr>
 				<tr>
 					<td colspan="2"><input type="button" value="수정"

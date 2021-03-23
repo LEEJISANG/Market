@@ -70,7 +70,7 @@
 						<%-- <td>${boardDto.bd_img}</td> --%>
 						<td>${boardDto.bd_m_no}</td>
 						<td>
-							<img alt="${boardDto.filename}" src="resources/storage/${boardDto.filename}">
+							<img alt="${boardDto.filename}" src="resources/storage/${boardDto.filename}" width="300">
 						</td>
 						<td><a href="BoardView?bd_no=${boardDto.bd_no}">${boardDto.bd_title}</a></td>
 						<td>${boardDto.bd_regDate}</td>
