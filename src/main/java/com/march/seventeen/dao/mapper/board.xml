@@ -7,7 +7,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
 	<select id="selectBoardList"
 		resultType="com.march.seventeen.dto.BoardDto">
-		SELECT BD_NO, BD_M_NO, BD_TITLE, BD_REGDATE, BD_HIT 
+		SELECT *
 		FROM BOARD
 		ORDER BY BD_NO DESC
 	</select>
@@ -18,7 +18,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	</select>
 	<insert id="BoardInsert">
 		INSERT INTO
-		BOARD(BD_M_NO, BD_TITLE, BD_CONTENT, FILENAME, BD_REGDATE)
+		BOARD(BD_M_NO, BD_TITLE, BD_CONTENT, FILENAME, BD_REGDATE, BD_HIT)
 		VALUES (#{param1}, #{param2}, #{param3}, #{param4}, NOW(), 0)
 	</insert>
 	<select id ="BoardView"

@@ -62,23 +62,23 @@ public class BoardController {
 	
 	@RequestMapping(value="write", method=RequestMethod.POST)
 	public String write(MultipartHttpServletRequest multipartRequest, Model model) {
-		model.addAttribute("multipartRequest", multipartRequest);
 		
+		model.addAttribute("multipartRequest", multipartRequest);
 		boardInsertCommand.execute(sqlSession, model);
 		return "redirect:boardList";
 	}
 	
 	@RequestMapping(value="BoardView", method=RequestMethod.GET)
 	public String view(HttpServletRequest request, Model model) {
+		
 		model.addAttribute("request",request);
-	
 		boardViewCommand.execute(sqlSession, model);
 		return "board/boardView";
 	}
 	@RequestMapping(value="BoardUpdate", method=RequestMethod.POST)
 	public String update(HttpServletRequest request, Model model) {
-		model.addAttribute("request", request);
 		
+		model.addAttribute("request", request);
 		boardUpdateCommand.execute(sqlSession, model);
 		return "redirect:boardList";
 	}
