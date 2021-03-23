@@ -351,6 +351,26 @@
 						</div>
 					</a>
 				</div>
+				<div class="index-product">
+					<a class="index-product-a" href="#">
+						<div class="index-product-img">
+							<img src="" width="194" height="194" alt='상품 이미지' />
+						</div>
+						<div class="index-product-content">
+							<div class="index-product-name">
+								이름
+							</div>
+							<div class="index-product-etc">
+								<div class="index-product-price">
+									가격
+								</div>
+								<div class="index-product-time">
+									<span>시간</span>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
