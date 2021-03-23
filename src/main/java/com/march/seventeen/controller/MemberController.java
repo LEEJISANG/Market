@@ -1,4 +1,4 @@
-/*package com.march.seventeen.controller;
+package com.march.seventeen.controller;
 
 import java.util.Map;
 
@@ -25,6 +25,7 @@ public class MemberController {
 	private SqlSession sqlSession;
 	
 	private MemberEmailChkCommand memberEmailChkCommand;
+	private MemberLoginCommand memberLoginCommand;
 	
 	@Autowired
 	public void setCommand(MemberLoginCommand memberLoginCommand,
@@ -73,4 +74,3 @@ public class MemberController {
 		return memberEmailChkCommand.execute(sqlSession, model);
 	}
 }
-*/
