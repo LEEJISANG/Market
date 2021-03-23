@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+*{
+	box-sizing: border-box;
+}
+
+.member-mainbox{
+	margin: auto;
+	width: 800px;
+	padding: 30px;
+	border: 1px solid black;
+}
+.member-subbox{
+	margin: auto;
+	padding: auto;
+	text-align: center;
+	font-size: 16px;
+}
+.mem-star{
+	width: 10px;
+}
+.desc{
+	margin: 10px;
+}
+.mem-btn-box{
+	margin-top: 50px;
+}
+#pw-desc{
+	font-size: 12px;
+	}

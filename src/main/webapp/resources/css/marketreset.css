@@ -111,5 +111,11 @@ img {
 img {
 	vertical-align: bottom;
 }
-
-
+b, strong {
+    font-weight: bolder;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0px;
+}
