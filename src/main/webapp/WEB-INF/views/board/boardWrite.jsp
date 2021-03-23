@@ -42,7 +42,7 @@
 </style>
 </head>
 <body>
-	<form action="write" method="post">
+	<form action="write" method="post" enctype="multipart/form-data">
 		<table border="1">
 			<tbody>
 				<tr>
@@ -56,6 +56,10 @@
 				<tr>
 					<td>내용</td>
 					<td><textarea rows="10" cols="25" name="bd_content"></textarea></td>
+				</tr>
+				<tr>
+					<td>첨부</td>
+					<td><input type="file" name="files" multiple /></td>
 				</tr>
 				<tr>
 					<td colspan="2">

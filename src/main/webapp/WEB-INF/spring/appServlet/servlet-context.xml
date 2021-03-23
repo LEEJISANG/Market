@@ -26,6 +26,15 @@
 	
 	<context:component-scan base-package="com.march.seventeen" />
 	
+	<!-- command -->
+	
+	<beans:bean id="boardInsertCommand" class="com.march.seventeen.command.board.BoardInsertCommand"/>
+	<beans:bean id="boardListCommand" class="com.march.seventeen.command.board.BoardListCommand"/>
+	<beans:bean id="boardViewCommand" class="com.march.seventeen.command.board.BoardViewCommand"/>
+	<beans:bean id="boadDeleteCommand" class="com.march.seventeen.command.board.BoardDeleteCommand"/>
+	<beans:bean id="boardUpdateCommand" class="com.march.seventeen.command.board.BoardUpdateCommand"/>
+	<beans:bean id="downloadCommand" class="com.march.seventeen.command.board.DownloadCommand"/>
+	
 	<beans:bean id="memberLoginCommand" class="com.march.seventeen.command.member.MemberLoginCommand" />
 	
 </beans:beans>

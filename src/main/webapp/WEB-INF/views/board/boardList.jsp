@@ -51,6 +51,7 @@
 			<tr>
 				<td>글번호</td>
 				<td>멤버번호</td>
+				<td>이미지</td>
 				<td>제목</td>
 				<td>작성일</td>
 				<td>조회수</td>
@@ -66,10 +67,14 @@
 				<c:forEach var="boardDto" items="${list}">
 					<tr>
 						<td>${boardDto.bd_no}</td>
+						<%-- <td>${boardDto.bd_img}</td> --%>
 						<td>${boardDto.bd_m_no}</td>
+						<td>
+							<img alt="${boardDto.filename}" src="resources/storage/${boardDto.filename}">
+						</td>
 						<td><a href="BoardView?bd_no=${boardDto.bd_no}">${boardDto.bd_title}</a></td>
 						<td>${boardDto.bd_regDate}</td>
-						<td>${boardDto.bd_hit}</td>
+						
 					</tr>
 				</c:forEach>
 			</c:if>

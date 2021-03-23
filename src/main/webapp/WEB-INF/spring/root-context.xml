@@ -28,6 +28,8 @@
 		<property name="defaultEncoding" value="utf-8" />
 		<property name="maxUploadSize" value="10485760" />  
 	</bean>
+
+	
 	
 	<!-- 이메일 인증 : mailSender -->
 	<!-- 1. 메일을 보내는 계정은 "구글" 계정이어야만 합니다. -->

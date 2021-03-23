@@ -18,6 +18,6 @@ public class BoardDto {
 	private String bd_content;
 	private Date bd_regDate;
 	private int bd_hit;
-	private String bd_filename;
+	private String filename;
 
 }
