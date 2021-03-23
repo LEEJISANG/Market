@@ -35,7 +35,7 @@
 	<beans:bean id="boardUpdateCommand" class="com.march.seventeen.command.board.BoardUpdateCommand"/>
 	<beans:bean id="downloadCommand" class="com.march.seventeen.command.board.DownloadCommand"/>
 	
-	<beans:bean id="memberLoginCommand" class="com.march.seventeen.command.member.MemberLoginCommand" />
+	
 	<beans:bean id="memberEmailChkCommand" class="com.march.seventeen.command.member.MemberEmailChkCommand" />
 	
 </beans:beans>

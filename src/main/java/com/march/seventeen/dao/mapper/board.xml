@@ -19,7 +19,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<insert id="BoardInsert">
 		INSERT INTO
 		BOARD(BD_M_NO, BD_TITLE, BD_CONTENT, FILENAME, BD_REGDATE)
-		VALUES (#{param1}, #{param2}, #{param3}, #{param4}, NOW())
+		VALUES (#{param1}, #{param2}, #{param3}, #{param4}, NOW(), 0)
 	</insert>
 	<select id ="BoardView"
 		resultType="com.march.seventeen.dto.BoardDto">

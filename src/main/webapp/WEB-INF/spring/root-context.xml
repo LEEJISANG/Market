@@ -29,6 +29,8 @@
 		<property name="maxUploadSize" value="10485760" />  
 	</bean>
 
+	<!-- command -->
+	<bean id="boardInsertCommand" class="com.march.seventeen.command.board.BoardInsertCommand" />
 	
 	
 	<!-- 이메일 인증 : mailSender -->

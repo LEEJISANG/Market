@@ -65,7 +65,6 @@ public class BoardController {
 		model.addAttribute("multipartRequest", multipartRequest);
 		
 		boardInsertCommand.execute(sqlSession, model);
-		
 		return "redirect:boardList";
 	}
 	
@@ -98,7 +97,6 @@ public class BoardController {
 		model.addAttribute("request", request);
 		model.addAttribute("response", response);
 		
-		downloadCommand = new DownloadCommand();
 		downloadCommand.execute(sqlSession, model);
 		
 	}

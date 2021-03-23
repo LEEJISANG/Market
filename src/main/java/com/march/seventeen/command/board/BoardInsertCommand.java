@@ -22,9 +22,10 @@ public class BoardInsertCommand implements BoardCommand {
 		
 		// multipartRequest에 저장된 일반 파라미터는 getParameter()를 씁니다.
 		HttpServletRequest request = (HttpServletRequest) map.get("request");
-		int bd_m_no = Integer.parseInt(request.getParameter("bd_m_no"));
-		String bd_title = request.getParameter("bd_title");
-		String bd_content = request.getParameter("bd_content");
+		
+		String bd_m_no = multipartRequest.getParameter("bd_m_no");
+		String bd_title = multipartRequest.getParameter("bd_title");
+		String bd_content = multipartRequest.getParameter("bd_content");
 		
 		// 1. multipartRequest에 저장된 첨부가 1개일 때는 getFile()을 씁니다.
 				/*
