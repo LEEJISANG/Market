@@ -39,5 +39,11 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		FROM BOARD
 		WHERE BD_NO = #{param1}
 	</delete>
+	<!-- 게시판 조회수 -->
+	<update id="BoardHit" parameterType="int">
+		UPDATE BOARD
+		SET BD_HIT = BD_HIT+1
+		WHERE BD_NO =#{param1}		
+	</update>
 
 </mapper>

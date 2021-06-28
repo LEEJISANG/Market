@@ -12,6 +12,7 @@ public interface BoardDao {
 	public BoardDto BoardView(int bd_no);
 	public int BoardUpdate(int bd_no, String bd_title, String bd_content);
 	public int BoardDelete(int bd_no);
+	public int BoardHit(int bd_no);
 	
 	
 }

@@ -79,11 +79,11 @@ table>tfoot>tr>td>input[type=button]:hover {
 				<tr>
 					<td>제목</td>
 					<td><input type="text" name="bd_title"
-						value="${boardDto.bd_title}" /></td>
+						value="${boardDto.bd_title}" readonly/></td>
 				</tr>
 				<tr>
 					<td>내용</td>
-					<td><textarea rows="10" cols="30" name="bd_content">${boardDto.bd_content}</textarea></td>
+					<td><textarea rows="10" cols="30" name="bd_content" readonly>${boardDto.bd_content}</textarea></td>
 				</tr>
 				<tr>
 					<td>첨부이미지</td>

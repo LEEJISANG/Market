@@ -19,6 +19,10 @@ public class BoardViewCommand implements BoardCommand {
 		int bd_no = Integer.parseInt(request.getParameter("bd_no"));
 		model.addAttribute("boardDto", boardDao.BoardView(bd_no));
 		
+		//조회수 처리
+		int bd_hit = boardDao.BoardHit(bd_no);
+		model.addAttribute("bd_hit", bd_hit);
+		
 	}
 
 }

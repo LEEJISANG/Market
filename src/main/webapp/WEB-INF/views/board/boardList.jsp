@@ -74,7 +74,7 @@
 						</td>
 						<td><a href="BoardView?bd_no=${boardDto.bd_no}">${boardDto.bd_title}</a></td>
 						<td>${boardDto.bd_regDate}</td>
-						
+						<td>${boardDto.bd_hit}</td>
 					</tr>
 				</c:forEach>
 			</c:if>
